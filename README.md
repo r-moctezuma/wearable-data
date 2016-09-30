@@ -16,5 +16,18 @@ The script will create a new file, HAR_tidy.txt, which will contain the result o
 
 For a description of the HAR_tidy.txt dataset, please refer to the file CodeBook.md.
 
+### Script functionality:
 
+The script performs the following steps:
+
+1. Loads the required packages (dplyr and tidyr)
+2. Loads the training and test datasets and merges them into one set
+3. Extracts from the combined dataset the variables related to the mean and standard deviation
+4. Reads the activity labels and activity data sets
+5. Uses the activity labels to insert descriptive activity names in the data set
+6. Replaces the variable names in the dataset with descriptive variable names
+7. Cleans up datasets no longer needed
+8. Creates a second dataset with the average of each variable, grouped by activity and subject
+9. Cleans up datasets no longer needed
+10. Writes the resulting tidy dataset to a file.
 
