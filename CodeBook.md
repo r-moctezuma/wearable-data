@@ -13,6 +13,7 @@ DITEN - Università  degli Studi di Genova, Genoa (I-16145), Italy.
 2 - CETpD - Technical Research Centre for Dependency Care and Autonomous Living
 Universitat Politècnica de Catalunya (BarcelonaTech). Vilanova i la Geltrú (08800), Spain
 activityrecognition '@' smartlab.ws 
+
 ===================================================================================================================
 
 The summary information is presented in the file HAR_tidy.txt. Each record contains the averages of the
