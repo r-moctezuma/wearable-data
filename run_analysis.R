@@ -9,8 +9,8 @@ library(tidyr)
 ## Make sure the UCI HAR Dataset is unzipped in the current directory
 
 ## 1. Merges the training and the test sets to create one data set.
-train <- read.fwf('./UCI HAR Dataset/train/X_train.txt', rep(16,561))
-test  <- read.fwf('./UCI HAR Dataset/test/X_test.txt', rep(16,561))
+train <- read.table('./UCI HAR Dataset/train/X_train.txt', header = FALSE)
+test  <- read.table('./UCI HAR Dataset/test/X_test.txt', header = FALSE)
 alldata <- rbind(train,test)
 
 ## 2. Extracts only the measurements on the mean and standard deviation for each activity measurement.
