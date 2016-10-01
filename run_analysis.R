@@ -21,7 +21,7 @@ alldata <- alldata[,grepl("mean",features$V2) | grepl("std", features$V2)]
 activity_labels <- read.delim("./UCI HAR Dataset/activity_labels.txt", sep=" ", stringsAsFactors = FALSE, header = FALSE, col.names = c('activity','activityLabel'))
 train_activity <- read.csv("./UCI HAR Dataset/train/y_train.txt", stringsAsFactors = FALSE, header = FALSE, col.names = c('activity'))
 test_activity <- read.csv("./UCI HAR Dataset/test/y_test.txt", stringsAsFactors = FALSE, header = FALSE, col.names = c('activity'))
-all_activity <- merge(rbind(train_activity,test_activity), activity_labels, all = TRUE)
+all_activity <- join(rbind(train_activity,test_activity), activity_labels, by = "activity")
 alldata <- cbind(all_activity$activityLabel,alldata)
 
 ## 4. Appropriately labels the data set with descriptive variable names.
